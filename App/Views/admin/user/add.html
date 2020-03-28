@@ -1,0 +1,61 @@
+{% extends "baseadmin.html" %}
+
+{% if editData.id != "" %}
+        {% set title = "Edit user" %}
+        {% set button = "Update user" %}
+    {% else %}
+        {% set  title = "Add user" %}
+        {% set button = "Add user" %}
+    {% endif %}
+    
+{% block title %}
+    {{title}}
+{% endblock title %}
+
+
+{% block body %}   
+    {% if editData.id != "" %}
+        {% set action = url ~ "/admin/user/" ~ editData.id ~"/edit" %}
+    {% else %}
+        {% set action = url ~ "/admin/user/add" %}
+    {% endif %}
+    <div  class="card-body card-block" >
+        <h1>Add user</h1>
+        <form action="{{action}}" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="firstName" class="form-control-label">First name</label>
+                <input type="text" name="user[firstName]" id="firstName"
+                 value="{{editData.firstName}}" class="form-control">
+                 {{errData.firstName}}
+            </div>
+            <div>
+                <label for="lastName" class="form-control-label">Last name</label>
+                <input type="text" name="user[lastName]" id="lastName"
+                 value="{{editData.lastName}}" class="form-control">
+                 {{errData.lastName}}
+            </div>
+            <div>
+                <label for="email" class="form-control-label">Email</label>
+                <input type="email" name="user[email]" id="email"
+                 value="{{editData.email}}" class="form-control">
+                 {{errData.email}}
+            </div>
+            <div>
+                <label for="phoneNo" class="form-control-label">Phone No</label>
+                <input type="number" name="user[phoneNo]" id="phoneNo"
+                 value="{{editData.phoneNo}}" class="form-control">
+                 {{errData.phoneNo}}
+            </div>
+            <div>
+                <label for="password" class="form-control-label">Password</label>
+                <input type="text" name="user[password]" id="password"
+                 value="{{editData.password}}" class="form-control">
+                 {{errData.password}}
+            </div>
+
+            <input type="hidden" name="user[id]" value="{{editData.id}}">
+            <input type="submit" value="{{button}}" class="btn btn-primary mt-3">   
+        </form>
+    </div>
+    
+{% endblock body %}

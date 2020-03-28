@@ -1,0 +1,68 @@
+[13-Feb-2020 12:05:23 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\Framework\public\index.php(38): Core\Router->dispatch('posts/1')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\Framework\Core\Router.php on Line 87</p>
+[13-Feb-2020 12:07:00 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\Framework\public\index.php(38): Core\Router->dispatch('posts/1')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\Framework\Core\Router.php on Line 87</p>
+[13-Feb-2020 12:07:07 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\Framework\public\index.php(38): Core\Router->dispatch('posts/1')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\Framework\Core\Router.php on Line 87</p>
+[13-Feb-2020 12:07:11 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\Framework\public\index.php(38): Core\Router->dispatch('posts/1')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\Framework\Core\Router.php on Line 87</p>
+[13-Feb-2020 13:10:06 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\Framework\public\index.php(38): Core\Router->dispatch('produc')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\Framework\Core\Router.php on Line 87</p>
+[13-Feb-2020 13:10:17 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\Framework\public\index.php(38): Core\Router->dispatch('produc')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\Framework\Core\Router.php on Line 87</p>
+[13-Feb-2020 13:10:22 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\Framework\public\index.php(38): Core\Router->dispatch('12')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\Framework\Core\Router.php on Line 87</p>
+[13-Feb-2020 13:10:59 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\Framework\public\index.php(38): Core\Router->dispatch('12')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\Framework\Core\Router.php on Line 87</p>
+[13-Feb-2020 13:12:18 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Twig\Error\LoaderError</p><p>Message : Unable to find template "Posts/inex.html" (looked into: ../App/Views).</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\Framework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('Posts/inex.html')
+#1 C:\xampp\htdocs\Framework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('Posts/inex.html')
+#2 C:\xampp\htdocs\Framework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('Posts/inex.html')
+#3 C:\xampp\htdocs\Framework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('Posts/inex.html')
+#4 C:\xampp\htdocs\Framework\Core\View.php(28): Twig\Environment->render('Posts/inex.html', Array)
+#5 C:\xampp\htdocs\Framework\App\Controllers\Posts.php(16): Core\View::renderTemplate('Posts/inex.html', Array)
+#6 [internal function]: App\Controllers\Posts->indexAction()
+#7 C:\xampp\htdocs\Framework\Core\Controller.php(20): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\Framework\Core\Router.php(75): Core\Controller->__call('index', Array)
+#9 C:\xampp\htdocs\Framework\public\index.php(38): Core\Router->dispatch('posts/index')
+#10 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\Framework\vendor\twig\twig\src\Loader\FilesystemLoader.php on Line 227</p>
+[13-Feb-2020 13:12:35 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Twig\Error\LoaderError</p><p>Message : Unable to find template "Posts/inex.html" (looked into: ../App/Views).</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\Framework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('Posts/inex.html')
+#1 C:\xampp\htdocs\Framework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('Posts/inex.html')
+#2 C:\xampp\htdocs\Framework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('Posts/inex.html')
+#3 C:\xampp\htdocs\Framework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('Posts/inex.html')
+#4 C:\xampp\htdocs\Framework\Core\View.php(28): Twig\Environment->render('Posts/inex.html', Array)
+#5 C:\xampp\htdocs\Framework\App\Controllers\Posts.php(16): Core\View::renderTemplate('Posts/inex.html', Array)
+#6 [internal function]: App\Controllers\Posts->indexAction()
+#7 C:\xampp\htdocs\Framework\Core\Controller.php(20): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\Framework\Core\Router.php(75): Core\Controller->__call('index', Array)
+#9 C:\xampp\htdocs\Framework\public\index.php(38): Core\Router->dispatch('posts/index')
+#10 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\Framework\vendor\twig\twig\src\Loader\FilesystemLoader.php on Line 227</p>
+[13-Feb-2020 13:17:10 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\Framework\public\index.php(38): Core\Router->dispatch('12')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\Framework\Core\Router.php on Line 87</p>
+[13-Feb-2020 13:17:11 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\Framework\public\index.php(38): Core\Router->dispatch('12')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\Framework\Core\Router.php on Line 87</p>
+[13-Feb-2020 13:19:32 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\Framework\public\index.php(38): Core\Router->dispatch('12')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\Framework\Core\Router.php on Line 87</p>
+[13-Feb-2020 13:20:26 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\Framework\public\index.php(38): Core\Router->dispatch('q')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\Framework\Core\Router.php on Line 87</p>
+[13-Feb-2020 13:20:37 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Twig\Error\LoaderError</p><p>Message : Unable to find template "Posts/indx.html" (looked into: ../App/Views).</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\Framework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('Posts/indx.html')
+#1 C:\xampp\htdocs\Framework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('Posts/indx.html')
+#2 C:\xampp\htdocs\Framework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('Posts/indx.html')
+#3 C:\xampp\htdocs\Framework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('Posts/indx.html')
+#4 C:\xampp\htdocs\Framework\Core\View.php(28): Twig\Environment->render('Posts/indx.html', Array)
+#5 C:\xampp\htdocs\Framework\App\Controllers\Posts.php(16): Core\View::renderTemplate('Posts/indx.html', Array)
+#6 [internal function]: App\Controllers\Posts->indexAction()
+#7 C:\xampp\htdocs\Framework\Core\Controller.php(20): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\Framework\Core\Router.php(75): Core\Controller->__call('index', Array)
+#9 C:\xampp\htdocs\Framework\public\index.php(38): Core\Router->dispatch('posts/index')
+#10 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\Framework\vendor\twig\twig\src\Loader\FilesystemLoader.php on Line 227</p>
+[13-Feb-2020 13:20:41 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Twig\Error\LoaderError</p><p>Message : Unable to find template "Posts/indx.html" (looked into: ../App/Views).</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\Framework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('Posts/indx.html')
+#1 C:\xampp\htdocs\Framework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('Posts/indx.html')
+#2 C:\xampp\htdocs\Framework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('Posts/indx.html')
+#3 C:\xampp\htdocs\Framework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('Posts/indx.html')
+#4 C:\xampp\htdocs\Framework\Core\View.php(28): Twig\Environment->render('Posts/indx.html', Array)
+#5 C:\xampp\htdocs\Framework\App\Controllers\Posts.php(16): Core\View::renderTemplate('Posts/indx.html', Array)
+#6 [internal function]: App\Controllers\Posts->indexAction()
+#7 C:\xampp\htdocs\Framework\Core\Controller.php(20): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\Framework\Core\Router.php(75): Core\Controller->__call('index', Array)
+#9 C:\xampp\htdocs\Framework\public\index.php(38): Core\Router->dispatch('posts/index')
+#10 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\Framework\vendor\twig\twig\src\Loader\FilesystemLoader.php on Line 227</p>

@@ -1,0 +1,45 @@
+{% extends "baseadmin.html" %}
+
+{% block title %}
+    Show Categories
+{% endblock title %}
+
+{% block body %}
+
+<h1>Categories</h1>
+<br>
+<div class="ml-auto">
+    <a href="{{url}}/admin/category/add"  class="btn btn-primary">Add Categories</a>
+    <button onclick="multiplCatDelete()" class="btn btn-danger">Delete</button>
+</div>
+
+<div class="col-lg-12">
+    <div class="table-responsive table--no-card m-b-30">
+        <table class="table table-borderless table-striped table-earning">
+<!-- <table class="uk-table uk-table-striped"> -->
+    <tr>
+        <th></th>
+        <th>Category Name</th>
+        <th>Image</th>
+        <th>Status</th>
+        <th>Description</th>
+        <th>Parent category</th>
+        <th colspan="2">Action</th>
+    </tr> 
+    {% for category in categoryData %}
+    <tr>
+        <td><input type="checkbox" value="{{category.id}}" name="catCheck" 
+             class="uk-checkbox"></td>
+        <td>{{category.name}}</td>
+
+        <td><img src="{{url}}/image/categories/{{category.image}}" width="100px"></td>
+        <td>{{category.status}}</td>
+        <td>{{category.description}}</td>
+        <td>{{category.parentId}}</td>
+        <td><a href="{{url}}/admin/category/{{category.id}}/edit">Edit</a></td>
+        <td><a href="{{url}}/admin/category/{{category.id}}/delete">Delete</a></td>      
+    </tr>
+    {% endfor %}  
+</table>
+
+{% endblock %}

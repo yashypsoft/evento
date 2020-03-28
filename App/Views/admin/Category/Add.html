@@ -1,0 +1,72 @@
+{% extends "baseadmin.html" %}
+
+{% if editData.id != "" %}
+        {% set title = "Edit Category" %}
+        {% set button = "Update Category" %}
+    {% else %}
+        {% set  title = "Add Category" %}
+        {% set button = "Add Category" %}
+    {% endif %}
+    
+{% block title %}
+    {{title}}
+{% endblock title %}
+
+
+{% block body %}   
+    {% if editData.id != "" %}
+        {% set action = url ~ "/admin/category/" ~ editData.id ~"/edit" %}
+    {% else %}
+        {% set action = url ~ "/admin/category/add" %}
+    {% endif %}
+    <div  class="card-body card-block" >
+        <h1>Add Category</h1>
+        <form action="{{action}}" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="categoryName" class="form-control-label">Name</label>
+                <input type="text" name="category[name]" id="categoryName"
+                 value="{{editData.name}}" class="form-control">
+                 {{errData.name}}
+            </div>
+
+            <div>
+                <label for="image" class="form-control-label">Select image</label>
+                <input type="file" name="category[image]" class="form-control" id="image">{{editData.image}}
+               
+                {{errData.image}}
+            </div>
+            <div>
+                <label for="status" class="form-control-label">Status</label>
+                {% if editData.status == 1 %}
+                    {% set OnChecked =  "checked" %}
+                {% elseif editData.status == 0%}
+                    {% set offChecked =  "checked" %}
+                {% endif %}
+                <input type="radio" name="category[status]" 
+                 value="ON" {{OnChecked}} >ON
+                <input type="radio" name="category[status]"
+                 value="OFF" {{offChecked}}>OFF
+                {{errData.status}}
+            </div>
+            <div>
+                <label for="description" class="form-control-label">Description</label>
+                <textarea name="category[description]" id="description" 
+                cols="30" rows="10"  class="form-control">{{editData.description}}</textarea>
+                {{errData.description}}
+            </div>
+            <div>
+                <label for="parentId" class="form-control-label">Parent Category</label>
+                <select name="category[parentId]" id="parentId" class="form-control">
+                    <option value="">Parent Category</option>
+                    {% for parent in parentCategory %}
+                    {% set selected = (editData.parent_category == parent.id) ? "selected" : "" %}
+                    <option value="{{parent.id}}" {{selected}}>{{parent.name}}</option>
+                    {% endfor %}
+                </select>  
+            </div>
+            <input type="hidden" name="category[id]" value="{{editData.id}}">
+            <input type="submit" value="{{button}}" class="btn btn-primary mt-3">   
+        </form>
+    </div>
+    
+{% endblock body %}

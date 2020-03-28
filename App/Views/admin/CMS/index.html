@@ -1,0 +1,40 @@
+{% extends "baseadmin.html" %}
+
+{% block title %}
+    Show Categories
+{% endblock title %}
+
+{% block body %}
+
+<h1>CMS Pages</h1>
+<br>
+<div class="ml-auto">
+    <a href="{{url}}/admin/CMS/add"   class="btn btn-primary">Add CMS</a>
+    <button  onclick="multiplCmsDelete()"  class="btn btn-danger">Delete</button>
+</div>
+
+<div class="col-lg-12">
+    <div class="table-responsive table--no-card m-b-30">
+        <table class="table table-borderless table-striped table-earning">
+<!-- <table class="uk-table uk-table-striped"> -->
+    <tr>
+        <th></th>
+        <th>Page Title</th>
+        <th>Status</th>
+        <th>Content</th>
+        <th colspan="2">Action</th>
+    </tr> 
+    {% for cms in cmsData %}
+    <tr>
+        <td><input type="checkbox" value="{{cms.id}}" name="cmsCheck" 
+            class="uk-checkbox"></td>
+        <td>{{cms.pageTitle}}</td>
+        <td>{{cms.status}}</td>
+        <td>{{cms.content}}</td>
+        <td><a href="{{url}}/admin/cms/{{cms.id}}/edit">Edit</a></td>
+        <td><a href="{{url}}/admin/cms/{{cms.id}}/delete">Delete</a></td>      
+    </tr>
+    {% endfor %} 
+</table>
+
+{% endblock %}

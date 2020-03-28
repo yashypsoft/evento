@@ -1,0 +1,16 @@
+[17-Feb-2020 14:33:01 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(44): Core\Router->dispatch('ee')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[17-Feb-2020 14:33:07 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(44): Core\Router->dispatch('22')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[17-Feb-2020 15:31:24 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception ErrorException</p><p>Message : Undefined index: urlkey</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\App\Controllers\Home.php(26): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 [internal function]: App\Controllers\Home->showAction()
+#2 C:\xampp\htdocs\mvc\Core\Controller.php(20): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvc\Core\Router.php(75): Core\Controller->__call('show', Array)
+#4 C:\xampp\htdocs\mvc\public\index.php(44): Core\Router->dispatch('')
+#5 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\App\Controllers\Home.php on Line 26</p>
+[17-Feb-2020 15:31:26 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception ErrorException</p><p>Message : Undefined index: urlkey</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\App\Controllers\Home.php(26): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 [internal function]: App\Controllers\Home->showAction()
+#2 C:\xampp\htdocs\mvc\Core\Controller.php(20): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvc\Core\Router.php(75): Core\Controller->__call('show', Array)
+#4 C:\xampp\htdocs\mvc\public\index.php(44): Core\Router->dispatch('')
+#5 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\App\Controllers\Home.php on Line 26</p>

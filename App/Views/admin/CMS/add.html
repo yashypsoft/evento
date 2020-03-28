@@ -1,0 +1,56 @@
+{% extends "baseadmin.html" %}
+
+{% if editData.id != "" %}
+        {% set title = "Edit CMS" %}
+        {% set button = "Update CMS" %}
+
+    {% else %}
+        {% set  title = "Add CMS" %}
+        {% set button = "Add CMS" %}
+    {% endif %}
+
+{% block title %}
+    {{title}}
+{% endblock title %}
+
+
+{% block body %}   
+
+    {% if editData.id != "" %}
+        {% set action = url ~ "/admin/cms/" ~ editData.id ~"/edit" %}
+    {% else %}
+        {% set action = url ~ "/admin/cms/add" %}
+    {% endif %}
+    <div class="card-body card-block">
+        <h1>{{title}}</h1>
+        <form action="{{action}}" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="pageTitle"  class="form-control-label">Page Title</label>
+                <input type="text"  class="form-control" name="cms[pageTitle]" id="pageTitle"
+                 value="{{editData.pageTitle}}">
+                 {{errData.pageTitle}}
+            </div>
+            <div>
+                <label for="status"  class="form-control-label">Status</label>
+                {% if editData.status == 'ON' %}
+                    {% set OnChecked =  "checked" %}
+                {% elseif editData.status == 'OFF'%}
+                    {% set offChecked =  "checked" %}
+                {% endif %}
+                <input type="radio"    name="cms[status]" value="ON" {{OnChecked}}>ON
+                <input type="radio"  name="cms[status]" value="OFF" {{offChecked}}>OFF
+                {{errData.status}}
+            </div>
+            <div>
+                <label for="content">Content</label>
+                <textarea name="cms[content]" id="description" 
+                cols="30" rows="10"  class="form-control" >{{editData.content}}</textarea>
+                {{errData.content}}
+            </div>
+
+            <input type="hidden" name="cms[id]" value="{{editData.id}}">
+            <input type="submit" value="{{button}}"  class="btn btn-primary mt-3">   
+        </form>
+    </div>
+    
+{% endblock body %}
