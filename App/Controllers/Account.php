@@ -3,11 +3,9 @@
 namespace App\Controllers;
 
 use App\Models\User;
-
-
 use Core\View;
 
-class Users extends  \Core\Controller
+class Account extends  \Core\Controller
 {
     public function loginAction()
     {
@@ -16,7 +14,6 @@ class Users extends  \Core\Controller
             $userObj = new User();
             $data = $_POST['users'];
             if ($userObj->validate($data)) {
-
                 $checkEmail =   $userObj->checkData('admin','email',$data['email']);
                 $checkPassword = $userObj->checkData('admin','password',$data['password']);
                 $userData = $userObj->fetchRow('admin',['email'=>$data['email'],
@@ -26,14 +23,14 @@ class Users extends  \Core\Controller
                 if($checkEmail && $checkPassword){ 
                  
                     View::renderTemplate(
-                        'login.html',
+                        '/account/login.html',
                         ['user' => $userData]
                     );
                     header("Location: ../admin/categories/index");  
                 
                 }else{
                     View::renderTemplate(
-                        'login.html',
+                        '/account/login.html',
                         ['loginErr' => "Enter valid email And password"  ]
                     );
                 }
@@ -42,13 +39,13 @@ class Users extends  \Core\Controller
             else {
                 $error = $userObj->getErrors();
                 View::renderTemplate(
-                    'login.html',
+                    '/account/login.html',
                     ['errData' => $error]
                 );
             }
         }
         else{
-            View::renderTemplate('\login.html');
+            View::renderTemplate('account/login.html');
         }
     }
 
@@ -56,5 +53,10 @@ class Users extends  \Core\Controller
         unset($_SESSION['admin']);
         header("Location: ../"); 
     } 
+
+    public function registerAction()
+    {
+        View::renderTemplate('account/register.html');
+    }
    
 }

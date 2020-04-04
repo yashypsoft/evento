@@ -5,18 +5,5 @@
 {% endblock title %}    
 
 {% block body %}
-<div class="uk-grid uk-margin-small-top">
-{% for product in productData %}
-    <div> 
-        <div> 
-            <img src="{{url}}/image/products/{{product.image}}" width="200px">
-        </div>
-        <p><b><a href="{{url}}/product/view/{{product.url_key}}">{{product.product_name}}</a></b></p>
-        <p><b> Short Description.</b> {{product.short_description}}</p>
-        <p><b>Rs.</b>{{product.price}}</p>
-        
-    </div>
-{% endfor %}
-</div>
-    
+
 {% endblock body %}

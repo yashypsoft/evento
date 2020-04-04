@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+{% endblock title %}    
+
+{% block body %}
+
+
+
+<div class="row">
+    {% for category in categoryData %}
+        <div class="col-md-6">
+            <a href="#">
+            <div class="card bg-dark">
+                <img src="" class="card-img" alt="...">
+                <div class="card-body card-img-overlay">
+                <h2 class="text-white text-center mt-5">{{category.name}}</h2>
+                <p> {{category.description}}</p>
+                </div>
+            </div>
+            </a>
+        </div>
+    {% endfor %}
+    
+</div>
+{% endblock body %}

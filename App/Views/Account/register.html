@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}
+    Login
+{% endblock title %}
+
+{% block body %}
+    
+    <div class="conatiner"> 
+        <h1>Login</h1>
+        <form action="{{url}}/Account/login" method="post">
+            
+            <input type="submit" value="Login" id="submit" class="btn btn-block btn-primary">    
+        </form>
+    </div>
+
+    
+{% endblock body %}
