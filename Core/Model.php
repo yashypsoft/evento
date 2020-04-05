@@ -99,7 +99,7 @@ abstract class Model
         // return $data;
 
         $stmt = $conn->query($query);
-        $result = $stmt->fetch(); 
+        $result = $stmt->fetch(PDO::FETCH_ASSOC); 
         return $result;
     }
 

@@ -28,7 +28,7 @@ class Category extends \Core\Controller
             if (
                 $categoryObj->validate($data) && $checkFileValidation
             ) {
-
+                $data['image'] = $_FILES['category']['name']['image'];
                 $categoryObj->insertData('category', $data);
                 header("Location:../category/index");
             } else {

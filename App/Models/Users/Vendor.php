@@ -2,15 +2,15 @@
 namespace App\Models\Users;
 use PDO;
 
-class Category extends \Core\Model{
+class Vendor extends \Core\Model{
 
-    public function getVendorDetails($id)
+    public function getVendorDetail($id)
     {
         $conn = self::getDB();
-        $query = "SELECT * FROM `vendor` WHERE `categoryId` = $id";
+        $query = "SELECT * FROM `vendor` WHERE `id` = $id";
         $stmt = $conn->query($query);
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC); 
-        return $result;
+        return $result[0];
     }
 
 }

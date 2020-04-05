@@ -45,7 +45,7 @@ class Vendor extends  \Core\Controller
 
     function logout()
     {
-        unset($_SESSION['user']);
+        unset($_SESSION['vendor']);
         header("Location: ../");
     }
 

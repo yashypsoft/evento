@@ -6,30 +6,30 @@
 {% block body %}
     <div class="container"> 
         <h1>Register User</h1>
-        <form action="{{url}}/User/register" method="post">
+        <form action="{{url}}/User/manage/index" method="post">
             <div class="form-group">
                 <label for="firstName">First Name</label>
-                <input type="text" class="form-control" name="user[firstName]" id="firstName">
+                <input type="text" class="form-control" value="{{editData.firstName}}" name="user[firstName]" id="firstName">
             </div>
             <div class="form-group">
                 <label for="lastName">Last Name</label>
-                <input type="text" class="form-control" name="user[lastName]" id="lastName">
+                <input type="text" class="form-control" value="{{editData.lastName}}" name="user[lastName]" id="lastName">
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" name="user[email]" id="email">
+                <input type="email" class="form-control" value="{{editData.email}}" name="user[email]" id="email">
             </div>
             <div class="form-group">
                 <label for="phoneNo">Phone Number</label>
-                <input type="number" class="form-control" name="user[phoneNo]" id="phoneNo">
+                <input type="number" class="form-control" value="{{editData.phoneNo}}" name="user[phoneNo]" id="phoneNo">
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" name="user[password]" id="password">
+                <input type="password" class="form-control" value="{{editData.password}}" name="user[password]" id="password">
             </div>
             <div class="form-group">
                 <label for="cnfmPassword">Confirm password</label>
-                <input type="password" class="form-control" name="cnfmPassword" id="cnfmPassword">
+                <input type="password" class="form-control"  name="cnfmPassword" id="cnfmPassword">
             </div>
             <input type="submit" value="Login" id="submit" class="btn btn-block btn-primary">    
         </form>

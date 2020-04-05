@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+Explore
+{% endblock title %}    
+
+{% block body %}
+<h1>Orders</h1>
+<div class="row">
+    {% for order in orderData %}
+        <div class="col-md-6">
+            <div class="card bg-dark">
+                <div class="card-body">
+                <h2 class="text-white text-center mt-5">{{order.brandName}}</h2>
+                <p> {{order.phoneNo}}</p>
+                <p> {{order.emailId}}</p>
+                <p> {{order.address}}</p>
+                <p> {{order.city}}</p>
+                <p> {{order.state}}</p>
+                </div>
+            </div>
+            </a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock body %}

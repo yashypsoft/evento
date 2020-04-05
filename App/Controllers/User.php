@@ -20,11 +20,8 @@ class User extends  \Core\Controller
                 $_SESSION['user'] = $userData;
 
                 if ($checkEmail && $checkPassword) {
-                    View::renderTemplate(
-                        '/user/login.html',
-                        ['user' => $userData]
-                    );
-                    // header("Location:/");
+                   
+                    header("Location:../user/explore/index");
                 } else {
                     View::renderTemplate(
                         '/user/login.html',

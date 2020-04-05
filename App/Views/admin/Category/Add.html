@@ -6,7 +6,7 @@
     {% else %}
         {% set  title = "Add Category" %}
         {% set button = "Add Category" %}
-    {% endif %}
+{% endif %}
     
 {% block title %}
     {{title}}
@@ -32,7 +32,6 @@
             <div>
                 <label for="image" class="form-control-label">Select image</label>
                 <input type="file" name="category[image]" class="form-control" id="image">{{editData.image}}
-               
                 {{errData.image}}
             </div>
             <div>

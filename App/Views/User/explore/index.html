@@ -1,19 +1,16 @@
 {% extends "base.html" %}
 
 {% block title %}
-
+Explore
 {% endblock title %}    
 
 {% block body %}
-
-
-
 <div class="row">
     {% for category in categoryData %}
         <div class="col-md-6">
-            <a href="#">
+            <a href="{{url}}/user/explore/{{category.id}}/view">
             <div class="card bg-dark">
-                <img src="" class="card-img" alt="...">
+                <img width="24px" height="140px" src="{{url}}/image/categories/{{category.image}}" class="card-img" alt="...">
                 <div class="card-body card-img-overlay">
                 <h2 class="text-white text-center mt-5">{{category.name}}</h2>
                 <p> {{category.description}}</p>
@@ -22,6 +19,5 @@
             </a>
         </div>
     {% endfor %}
-    
 </div>
 {% endblock body %}
