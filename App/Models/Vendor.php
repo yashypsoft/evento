@@ -1,6 +1,7 @@
 <?php
-namespace App\Models\Admin;
-use PDO;
+
+namespace App\Models;
+
 class Vendor extends \Core\Model
 {
     public $errArray = [];

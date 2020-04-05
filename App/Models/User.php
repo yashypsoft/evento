@@ -1,9 +1,6 @@
 <?php
-
 namespace App\Models;
-
 use PDO;
-
 class User extends \Core\Model
 {
 
@@ -14,13 +11,13 @@ class User extends \Core\Model
         $userData = [];
         foreach ($postData as $key => $value) {
             switch ($key) {
-                
+
                 case 'email':
                     $userData['email'] = $value;
                     break;
                 case 'password':
                     $userData['password'] = md5($value);
-                    break; 
+                    break;
             }
         }
         return $userData;
@@ -57,7 +54,7 @@ class User extends \Core\Model
             }
         }
 
-       
+
 
         if ($this->errArray == []) {
             return true;
@@ -70,7 +67,4 @@ class User extends \Core\Model
     {
         return $this->errArray;
     }
-
-
-    
 }

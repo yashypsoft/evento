@@ -10,8 +10,7 @@ class Category extends \Core\Model{
         $query = "";
 
         $stmt = $conn->query($query);
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC); 
-       
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $result;
         
     }

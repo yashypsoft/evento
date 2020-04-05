@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}
+    Login
+{% endblock title %}
+
+{% block body %}
+    
+    <div class="container"> 
+        <h1>Register User</h1>
+        <form action="{{url}}/User/register" method="post">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" name="user[firstName]" id="firstName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" name="user[lastName]" id="lastName">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="user[email]" id="email">
+            </div>
+            <div class="form-group">
+                <label for="phoneNo">Phone Number</label>
+                <input type="number" class="form-control" name="user[phoneNo]" id="phoneNo">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text" class="form-control" name="user[password]" id="password">
+            </div>
+            <div class="form-group">
+                <label for="cnfmPassword">Confirm password</label>
+                <input type="text" class="form-control" name="cnfmPassword" id="cnfmPassword">
+            </div>
+            <input type="submit" value="Login" id="submit" class="btn btn-block btn-primary">    
+        </form>
+    </div>
+
+    
+{% endblock body %}
