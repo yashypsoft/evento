@@ -1,0 +1,124 @@
+[07-Apr-2020 13:46:32 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('user/explore/')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[07-Apr-2020 13:46:33 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('user/explore/')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[07-Apr-2020 13:46:35 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('user/explore/in...')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[07-Apr-2020 13:46:35 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('user/explore/in...')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[07-Apr-2020 13:46:51 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('user/explore/in...')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[07-Apr-2020 13:46:54 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('image/categorie...')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[07-Apr-2020 13:46:54 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('image/categorie...')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[07-Apr-2020 13:46:54 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('image/categorie...')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[07-Apr-2020 13:46:54 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('image/categorie...')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[07-Apr-2020 13:59:16 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('image/categorie...')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[07-Apr-2020 13:59:16 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('image/categorie...')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[07-Apr-2020 13:59:16 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('image/categorie...')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[07-Apr-2020 13:59:16 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('image/categorie...')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[07-Apr-2020 14:00:09 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('image/categorie...')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[07-Apr-2020 14:00:09 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('image/categorie...')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[07-Apr-2020 14:00:09 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('image/categorie...')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[07-Apr-2020 14:00:09 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : No Route Matched</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('image/categorie...')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 87</p>
+[07-Apr-2020 14:00:10 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Twig\Error\LoaderError</p><p>Message : Unable to find template "user/contactus/view" (looked into: ../App/Views).</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('user/contactus/...')
+#1 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('user/contactus/...')
+#2 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('user/contactus/...')
+#3 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('user/contactus/...')
+#4 C:\xampp\htdocs\mvc\Core\View.php(40): Twig\Environment->render('user/contactus/...', Array)
+#5 C:\xampp\htdocs\mvc\App\Controllers\User\Contactus.php(32): Core\View::renderTemplate('user/contactus/...')
+#6 [internal function]: App\Controllers\User\Contactus->viewAction()
+#7 C:\xampp\htdocs\mvc\Core\Controller.php(20): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\mvc\Core\Router.php(75): Core\Controller->__call('view', Array)
+#9 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('user/contactus/...')
+#10 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\vendor\twig\twig\src\Loader\FilesystemLoader.php on Line 227</p>
+[07-Apr-2020 14:00:10 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Twig\Error\LoaderError</p><p>Message : Unable to find template "user/contactus/view" (looked into: ../App/Views).</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('user/contactus/...')
+#1 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('user/contactus/...')
+#2 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('user/contactus/...')
+#3 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('user/contactus/...')
+#4 C:\xampp\htdocs\mvc\Core\View.php(40): Twig\Environment->render('user/contactus/...', Array)
+#5 C:\xampp\htdocs\mvc\App\Controllers\User\Contactus.php(32): Core\View::renderTemplate('user/contactus/...')
+#6 [internal function]: App\Controllers\User\Contactus->viewAction()
+#7 C:\xampp\htdocs\mvc\Core\Controller.php(20): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\mvc\Core\Router.php(75): Core\Controller->__call('view', Array)
+#9 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('user/contactus/...')
+#10 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\vendor\twig\twig\src\Loader\FilesystemLoader.php on Line 227</p>
+[07-Apr-2020 14:01:24 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Twig\Error\SyntaxError</p><p>Message : Cannot use "extend" in a block.</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\ExtendsTokenParser->parse(Object(Twig\Token))
+#1 C:\xampp\htdocs\mvc\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#2 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#3 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#4 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#5 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#6 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#7 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'user/contactus/...')
+#8 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('user/contactus/...')
+#9 C:\xampp\htdocs\mvc\Core\View.php(40): Twig\Environment->render('user/contactus/...', Array)
+#10 C:\xampp\htdocs\mvc\App\Controllers\User\Contactus.php(32): Core\View::renderTemplate('user/contactus/...')
+#11 [internal function]: App\Controllers\User\Contactus->viewAction()
+#12 C:\xampp\htdocs\mvc\Core\Controller.php(20): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\mvc\Core\Router.php(75): Core\Controller->__call('view', Array)
+#14 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('user/contactus/...')
+#15 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\App\Views\User\contactus\view.html on Line 8</p>
+[07-Apr-2020 14:01:24 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Twig\Error\SyntaxError</p><p>Message : Cannot use "extend" in a block.</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\ExtendsTokenParser->parse(Object(Twig\Token))
+#1 C:\xampp\htdocs\mvc\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#2 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#3 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#4 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#5 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#6 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#7 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'user/contactus/...')
+#8 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('user/contactus/...')
+#9 C:\xampp\htdocs\mvc\Core\View.php(40): Twig\Environment->render('user/contactus/...', Array)
+#10 C:\xampp\htdocs\mvc\App\Controllers\User\Contactus.php(32): Core\View::renderTemplate('user/contactus/...')
+#11 [internal function]: App\Controllers\User\Contactus->viewAction()
+#12 C:\xampp\htdocs\mvc\Core\Controller.php(20): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\mvc\Core\Router.php(75): Core\Controller->__call('view', Array)
+#14 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('user/contactus/...')
+#15 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\App\Views\User\contactus\view.html on Line 8</p>
+[07-Apr-2020 14:01:25 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Twig\Error\SyntaxError</p><p>Message : Cannot use "extend" in a block.</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\ExtendsTokenParser->parse(Object(Twig\Token))
+#1 C:\xampp\htdocs\mvc\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#2 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#3 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#4 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#5 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#6 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#7 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'user/contactus/...')
+#8 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('user/contactus/...')
+#9 C:\xampp\htdocs\mvc\Core\View.php(40): Twig\Environment->render('user/contactus/...', Array)
+#10 C:\xampp\htdocs\mvc\App\Controllers\User\Contactus.php(32): Core\View::renderTemplate('user/contactus/...')
+#11 [internal function]: App\Controllers\User\Contactus->viewAction()
+#12 C:\xampp\htdocs\mvc\Core\Controller.php(20): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\mvc\Core\Router.php(75): Core\Controller->__call('view', Array)
+#14 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('user/contactus/...')
+#15 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\App\Views\User\contactus\view.html on Line 8</p>
+[07-Apr-2020 14:01:26 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Twig\Error\SyntaxError</p><p>Message : Cannot use "extend" in a block.</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\ExtendsTokenParser->parse(Object(Twig\Token))
+#1 C:\xampp\htdocs\mvc\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#2 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#3 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#4 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#5 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#6 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#7 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'user/contactus/...')
+#8 C:\xampp\htdocs\mvc\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('user/contactus/...')
+#9 C:\xampp\htdocs\mvc\Core\View.php(40): Twig\Environment->render('user/contactus/...', Array)
+#10 C:\xampp\htdocs\mvc\App\Controllers\User\Contactus.php(32): Core\View::renderTemplate('user/contactus/...')
+#11 [internal function]: App\Controllers\User\Contactus->viewAction()
+#12 C:\xampp\htdocs\mvc\Core\Controller.php(20): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\mvc\Core\Router.php(75): Core\Controller->__call('view', Array)
+#14 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('user/contactus/...')
+#15 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\App\Views\User\contactus\view.html on Line 8</p>
+[07-Apr-2020 14:04:17 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : controller class App\Controllers\Contactus not found</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('contactus/send')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 82</p>
+[07-Apr-2020 14:04:17 Asia/Kolkata] <h1>Fatal Error</h1><p>Uncaught Exception Exception</p><p>Message : controller class App\Controllers\Contactus not found</p><p>Stack tree: <pre>#0 C:\xampp\htdocs\mvc\public\index.php(48): Core\Router->dispatch('contactus/send')
+#1 {main}</pre></p><p>Thrown in : C:\xampp\htdocs\mvc\Core\Router.php on Line 82</p>

@@ -6,4 +6,58 @@
 
 {% block body %}
     <h1>Dashboard</h1>
+    <br>
+    <div class="col-lg-12">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 ">
+                <div class="statistic__item statistic__item--green">
+                    <h2 class="number text-white">{{user}}</h2>
+                    <span class="desc  text-white">Total users</span>
+                    <div class="icon">
+                        <i class="zmdi zmdi-account-o"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="statistic__item statistic__item--orange">
+                    <h2 class="number  text-white">{{order}}</h2>
+                    <span class="desc  text-white">Total orders</span>
+                    <div class="icon">
+                        <i class="zmdi zmdi-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="statistic__item statistic__item--blue">
+                    <h2 class="number  text-white">{{vendor}}</h2>
+                    <span class="desc text-white">Total Vendor</span>
+                    <div class="icon">
+                        <i class="zmdi zmdi-calendar-note"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="statistic__item statistic__item--red">
+                    <h2 class="number  text-white">{{category}}</h2>
+                    <span class="desc  text-white">Categories</span>
+                    <div class="icon">
+                        <i class="zmdi zmdi-money"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="statistic-chart-1">
+            <h3 class="title-3 m-b-30">Order chart</h3>
+            <div class="chart-wrap"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                <canvas id="widgetChart5" height="242" width="330" class="chartjs-render-monitor" style="display: block; width: 330px; height: 242px;"></canvas>
+            </div>
+            <div class="statistic-chart-1-note">
+                <span class="big">{{order}}</span>
+                <span>Order this year.</span>
+            </div>
+        </div>
+
+    </div>
+    
 {% endblock body %}

@@ -60,19 +60,12 @@
                     </div>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="contact.html">Help</a>
+                    <a class="nav-link" href="{{url}}/user/contactus/view">Contect us</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Photos
-                      <span class="ti-angle-down"></span>
-                    </a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="blog.html">Blog Listing</a>
-                      <a class="dropdown-item" href="blog-two.html">Blog Layout Two</a>
-                      <a class="dropdown-item" href="blog-detail.html">Blog Detail</a>
-                    </div>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">About us</a>
                   </li>
+              
                   {% if user.id != "" %}
 
                   <li class="nav-item dropdown">
@@ -81,9 +74,11 @@
                       <span class="ti-angle-down"></span>
                     </a>
                     <div class="dropdown-menu">
+                      <a href="{{url}}/user/manage/index" class="nav-link">Manage Account</a>
                       <a href="{{url}}/user/order/History" class="nav-link">Orders</a>
                       <a href="{{url}}/user/logout" class="nav-link">Logout</a>
                     </div>
+                    
                   </li>
 
                   {% else %}
