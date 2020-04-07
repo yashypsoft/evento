@@ -11,11 +11,11 @@ function multiplCatDelete() {
   value = value.substr(0, value.length - 1);
   
   $.ajax({
-    url: baseUrl+"/Categories/multipleDelete",
+    url: baseUrl+"/admin/category/multipleDelete",
     type: "POST",
     data: { deleteId: value } 
   }).done(function(result) {
-    location.replace(baseUrl+'/admin/categories/index');
+    location.replace(baseUrl+'/admin/category/index');
   });
 }
 

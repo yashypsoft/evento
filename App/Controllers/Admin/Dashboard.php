@@ -14,11 +14,6 @@ class Dashboard extends \Core\Controller {
     
     function before()
     {
-        if(isset($_SESSION['admin'])){
-            return true;
-        }
-        else{
-            header("Location:../../users/login");
-        }
+        
     }
 }

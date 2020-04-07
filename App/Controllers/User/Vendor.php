@@ -13,7 +13,11 @@ class Vendor extends \Core\Controller
         $id = ($this->route_params['id']);
         $vendorObj = new UsersVendor();
         $vendorData = $vendorObj->getVendorDetail($id);
-        View::renderTemplate('user/vendor/view.html', ['vendor'=>$vendorData]);
+        $imageData = $vendorObj->getImages($_SESSION['vid']);
+        
+        $reviewData = $vendorObj->getReview($id);
+        // print_r($reviewData);
+        View::renderTemplate('user/vendor/view.html', ['vendor' => $vendorData, 'imageData' => $imageData,'reviewData'=>$reviewData]);
     }
 
     public function bookAction()
@@ -21,15 +25,41 @@ class Vendor extends \Core\Controller
         $bookObj = new Booking();
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-                if(!isset(($_SESSION['user']['id']))){
-                    header("Location: ../../login");
-                }
+            if (!isset(($_SESSION['user']['id']))) {
+                header("Location: ../../login");
+            }
 
             $data = $_POST['book'];
-            $data['vendorId'] = ($this->route_params['id']);
+            $id =($this->route_params['id']);
+            $data['VendorinfoId'] = $id;
+            $_SESSION['VendorinfoId'] = ($this->route_params['id']);
             $data['userId'] = $_SESSION['user']['id'];
+            $data['price'] = $bookObj->fetchRow('vendorinfo',['id'=>$id])['price'];
             $bookObj->insertData('booking', $data);
             View::renderTemplate('user/vendor/book.html');
+        }
+    }
+
+    public function reviewAction()
+    {
+        $bookObj = new Booking();
+
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $data = $_POST['review'];
+            $data['VendorinfoId'] = ($this->route_params['id']);
+            $data['userId'] = $_SESSION['user']['id'];
+            $bookObj->insertData('review', $data);
+            header('Location:./view');
+        }
+    }
+
+    protected function before()
+    {
+        if (isset($_SESSION['user']['id'])) {
+            return true;
+        } else {
+            header("Location:../../login");
+            return false;
         }
     }
 }

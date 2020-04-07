@@ -5,19 +5,140 @@ Explore
 {% endblock title %}    
 
 {% block body %}
-<div class="row">
-    {% for category in categoryData %}
-        <div class="col-md-6">
-            <a href="{{url}}/user/explore/{{category.id}}/view">
-            <div class="card bg-dark">
-                <img width="24px" height="140px" src="{{url}}/image/categories/{{category.image}}" class="card-img" alt="...">
-                <div class="card-body card-img-overlay">
-                <h2 class="text-white text-center mt-5">{{category.name}}</h2>
-                <p> {{category.description}}</p>
+<section class="hero-wrap home-bg d-flex align-items-center">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="hero-title">
+          <h1>Worried about your Event?</h1>
+          <h3>
+            Don't worry we are here to help you...!
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <form>
+            <div class="search-box">
+              <div class="row">
+                <div class="col-md-6 search-box_line">
+                  <div class="search-box1">
+                    <div class="search-box-title">
+                      <label>Select Vendors Type</label><br />
+                      <input type="text" name="#" class="search-form" placeholder="Eg: Photgrapher, Bridal" />
+                    </div>
+                  </div>
                 </div>
+                <div class="col-md-6">
+                  <div class="search-box2">
+                    <div class="search-box-title">
+                      <label>Location?</label><br />
+                      <input type="text" name="#" class="search-form" placeholder="Select City" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            </a>
+            <div class="btn-search">
+              <a href="#" class="btn btn-simple">Search →</a>
+            </div>
+          </form>
+          <p class="search-bottom-title">
+            By using this website, you are agreeing to our
+            <a href="#"> terms and conditions</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="popular-link-set gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="titile-block">
+            <h3>Top Cities</h3>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="row">
+          <a href="#">
+            <div class="card mx-3 text-center img-fluid" style="width:200px">
+              <img class="card-img-top" src="{{url}}/home/images/gal1.jpg" alt="Card image" style="width:100%" />
+              <div class="card-img-overlay">
+                <h4 class="card-titlem my-5 text-white">Ahmedabad</h4>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="card mx-3 text-center img-fluid" style="width:200px">
+              <img class="card-img-top" src="{{url}}/home/images/gal1.jpg" alt="Card image" style="width:100%" />
+              <div class="card-img-overlay">
+                <h4 class="card-titlem my-5 text-white">Surat</h4>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card mx-3 text-center img-fluid" style="width:200px">
+              <img class="card-img-top" src="{{url}}/home/images/gal1.jpg" alt="Card image" style="width:100%" />
+              <div class="card-img-overlay">
+                <h4 class="card-titlem my-5 text-white">Delhi</h4>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card mx-3 text-center img-fluid" style="width:200px">
+              <img class="card-img-top" src="{{url}}/home/images/gal1.jpg" alt="Card image" style="width:100%" />
+              <div class="card-img-overlay">
+                <h4 class="card-titlem my-5 text-white">Mumbai</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="main-block featured-wrap">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="titile-block">
+            <h2>Categories</h2>
+            <p>
+              Explore your Fevourite Vendors here
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <a href="categories_all.html" class="text-danger">
+        <div class="d-flex justify-content-end">
+          View all
+          <i class="fa fa-angle-right text-bold ml-2 mt-1"></i>
+        </div>
+      </a>
+
+      <div class="row">
+      
+        {% for category in categoryData %}
+
+        <div class="col-md-6">
+          <a href="{{url}}/user/explore/{{category.id}}/view">
+            <div class="card bg-dark">
+              <img src="{{url}}/image/categories/{{category.image}}" height="200px" class="card-img" alt="..." />
+              <div class="card-body card-img-overlay">
+                <h2 class="text-white text-center mt-5">{{category.name}}</h2>
+              </div>
+            </div>
+          </a>
         </div>
     {% endfor %}
-</div>
+      </div>
+    </div>
+  </section>
+ 
+
 {% endblock body %}

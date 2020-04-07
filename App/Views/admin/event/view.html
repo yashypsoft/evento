@@ -1,0 +1,41 @@
+{% extends "baseadmin.html" %}
+
+{% block title %}
+    Show Categories
+{% endblock title %}
+
+{% block body %}
+
+<h1>Event</h1>
+<br>
+<div class="ml-auto">
+    <a href="{{url}}/admin/CMS/add"   class="btn btn-primary">Add Event</a>
+</div>
+
+<div class="col-lg-12">
+    <div class="table-responsive table--no-card m-b-30">
+        <table class="table table-borderless table-striped table-earning">
+            <tr>
+                <th>category</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Status</th> 
+                <th>Start At</th> 
+                <th>End At</th> 
+                <th colspan="2">Action</th>
+            </tr>
+        {% for event in eventData %}
+            <tr>
+                <td>{{event.name}}</td>
+                <td>{{event.description}}</td>
+                <td>{{event.price}}</td>
+                <td>{{event.status}}</td>
+                <td>{{event.startAt}}</td>
+                <td>{{event.endAt}}</td>
+                <td><a href="{{url}}/vendor/event/{{event.id}}/delete">Remove</a></td>
+                <td><a href="{{url}}/vendor/event/{{event.id}}/edit">Edit</a></td>
+            </tr>
+    {% endfor %} 
+</table>
+
+{% endblock %}

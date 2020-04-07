@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+Explore
+{% endblock title %}    
+
+{% block body %}
+<div class="container">
+    <h2>Orders</h2>
+    <div class="row">
+        {% if orderData == [] %}
+            <h4>No booking yet!.</h4>
+        {% endif %}
+        {% for order in orderData %}
+            <div class="col-12 mt-3">
+                <h3>{{order.brandName}}</h3>
+                <p>Booked On :- {{order.date}}</p>
+                <p>Contect No : {{order.phoneNo}}</p>
+                <p>Avalaible vendor :- {{order.startAt}} to {{order.endAt}}</p>
+                <a href="{{url}}/user/order/{{order.id}}/cancel" class="btn btn-danger">Cancel Booking</a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock body %}

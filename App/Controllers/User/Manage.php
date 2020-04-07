@@ -17,8 +17,6 @@ class Manage extends \Core\Controller
         $orders = $manageObj->getOrderDetails($_SESSION['user']['id']);
         View::renderTemplate('user/manage/order.html',['orderData'=>$orders]);
 
-        echo "<pre>";
-        print_r($orders);
 
     }
 

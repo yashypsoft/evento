@@ -6,17 +6,72 @@
 
 {% block body %}
 
-<div class="row">
-    {% for vendor in vendorData %}
-        <div class="col-md-6">
-            <a href="{{url}}/user/Vendor/{{vendor.id}}/view">
-            <div class="card bg-dark">
-                <div class="card-body">
-                    <h2 class="text-white text-center mt-5">{{vendor.brandName}}</h2>
+<section class="featured-wrap">
+    <div class="container-fluid container-subpage">
+        <div class="row">
+            <div class="col-md-12 responsive-wrap">
+                <div class="row detail-filter-wrap">
+                    <div class="col-md-4 featured-responsive">
+                        <div class="detail-filter-text">
+                            <p>{{count}} Results For <span>{{cat.name}}</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-8 featured-responsive">
+                        <div class="detail-filter">
+                            <p>Filter by</p>
+                            <form class="filter-dropdown">
+                                <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+                                    <option selected>Best Match</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </form>
+                            <form class="filter-dropdown">
+                                <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect1">
+                                    <option selected>Restaurants</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-responsive-wrap">
+                    <a class="map-icon btn btn-block" href="#"><i class="icon-location-pin"></i> <small>OPEN LISTING
+                            IN MAP</small></a>
+                </div>  
+                <div class="row">
+                    {% for vendor in vendorData %}
+
+                    <div class="col-md-3 card-2">
+                        <div class="card">
+                            <a href="{{url}}/user/Vendor/{{vendor.eventId}}/view"><img class="card-img-top"  height="210px" src="{{url}}\image\vendor/{{vendor.image}}"
+                                    alt="Card image cap"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">{{vendor.brandName}}</h5>
+                                <ul class="card-rating">
+                                    <li>5.0</li>
+                                    <li>3 ratings</li>
+                                    <!-- <li><i class="fa fa-circle" aria-hidden="true"></i></li> -->
+                                    <li>Rs.{{vendor.price}}</li>
+                                    <!-- <li><i class="fa fa-circle" aria-hidden="true"></i></li> -->
+                                    
+                            </div>
+                            <div class="card-bottom">
+                                <p><i class="ti-location-pin"></i>{{vendor.city}}</p>
+                                <span><a href="{{url}}/user/Vendor/{{vendor.eventId}}/view">Book Now</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
                 </div>
             </div>
-            </a>
         </div>
-    {% endfor %}
-</div>
+    </div>
+</section>
+
+
 {% endblock body %}

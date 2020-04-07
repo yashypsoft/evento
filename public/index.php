@@ -15,7 +15,7 @@ set_exception_handler('Core\Error::exceptionHandler');
 
 $router = new Core\Router();
 
-$router->add('', ['controller' => 'Home', 'action' => 'show' ,'urlkey'=>'home']);
+$router->add('', ['controller' => 'explore', 'action' => 'index' ,'namespace'=>'user']);
 $router->add('posts', ['controller' => 'Posts', 'action' => 'index']);
 $router->add('posts/&id=2', ['controller' => 'Posts', 'action' => '&id=2']);
 $router->add('{controller}/{action}');

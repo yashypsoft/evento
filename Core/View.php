@@ -25,10 +25,17 @@ class View
             $twig = new \Twig\Environment($loader);
             
             if(isset($_SESSION['admin'])){
-                $userData = $_SESSION['admin'];
-                $twig->addGlobal('admin',$userData);
+                $adminData = $_SESSION['admin'];
+                $twig->addGlobal('admin',$adminData);
             }
-          
+            if(isset($_SESSION['vendor'])){
+                $vendorData = $_SESSION['vendor'];
+                $twig->addGlobal('vendor',$vendorData);
+            }
+            if(isset($_SESSION['user'])){
+                $userData = $_SESSION['user'];
+                $twig->addGlobal('user',$userData);
+            }
         }
         echo $twig->render($template, $args);
     }

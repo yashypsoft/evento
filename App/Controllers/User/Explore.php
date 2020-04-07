@@ -18,9 +18,13 @@ class Explore extends \Core\Controller
     {
         // echo "hello";
         $id = ($this->route_params['id']);
+        $_SESSION['vid'] = $id;
         $categoryObj = new Category();
         $vendorData = $categoryObj->getVendorDetails($id);
-        View::renderTemplate('user/explore/view.html', ['vendorData'=>$vendorData]);
+        $count  = $categoryObj->getCount($id);
+        $cat   = $categoryObj->getFieldData('category','name',['id'=>$id])[0];
+        
+        View::renderTemplate('user/explore/view.html', ['vendorData'=>$vendorData,'count'=>$count,'cat'=>$cat]);
     }
 
 }

@@ -1,0 +1,38 @@
+{% extends "baseadmin.html" %}
+
+{% block title %}
+    Show Categories
+{% endblock title %}
+
+{% block body %}
+
+<h1>Orders</h1>
+<br>
+<div class="ml-auto">
+    <a href="{{url}}/admin/order/add"   class="btn btn-primary">Add Order</a>
+</div>
+
+<div class="col-lg-12">
+    <div class="table-responsive table--no-card m-b-30">
+        <table class="table table-borderless table-striped table-earning">
+    <tr>
+        <th>User</th>
+        <th>Booked Vendor</th>
+        <th>On Date</th>
+        <th>Available Vendor date</th>
+        <th>Price</th>
+        <th colspan="2">Action</th>
+    </tr> 
+    {% for order in orderData %}
+    <tr>
+        <td>{{order.firstName}}</td>
+        <td>{{order.brandName}}</td>
+        <td>{{order.date}}</td>
+        <td>{{order.startAt }} to {{order.endAt}}</td>
+        <td>{{order.price}}</td>
+        <td><a href="{{url}}/admin/cms/{{order.id}}/delete">Cancel</a></td>      
+    </tr>
+    {% endfor %} 
+</table>
+
+{% endblock %}

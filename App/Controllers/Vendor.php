@@ -20,11 +20,7 @@ class Vendor extends  \Core\Controller
                 $_SESSION['vendor'] = $userData;
 
                 if ($checkEmail && $checkPassword) {
-                    View::renderTemplate(
-                        '/vendor/login.html',
-                        ['user' => $userData]
-                    );
-                    // header("Location:../vendor/register");
+                     header("Location:../vendor/event/view");
                 } else {
                     View::renderTemplate(
                         '/vendor/login.html',

@@ -67,4 +67,5 @@ class User extends  \Core\Controller
             View::renderTemplate('user/register.html');
         }
     }
+
 }
