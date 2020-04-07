@@ -36,7 +36,8 @@ class Vendor extends \Core\Controller
             $data['userId'] = $_SESSION['user']['id'];
             $data['price'] = $bookObj->fetchRow('vendorinfo',['id'=>$id])['price'];
             $bookObj->insertData('booking', $data);
-            View::renderTemplate('user/vendor/book.html');
+            // View::renderTemplate('user/vendor/book.html');
+            header("Location: ../../payment/test");
         }
     }
 
